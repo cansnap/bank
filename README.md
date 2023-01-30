@@ -1,2 +1,2 @@
-# bank
+# bank 🏦
 évaluation de javascript
