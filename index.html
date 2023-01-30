@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Système d'authentification</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1 class="main-title">Authentification</h1>
+
+      <div class="message-fail">
+        <p>L'authentification a échoué !</p>
+      </div>
+      
+      <div class="message-connect">
+        <p>Vous êtes désormais connecté !</p>
+      </div>
+
+      <div class="container-col">
+
+        <div class="container-col1">
+          <form method="POST">
+
+            <div class="input-group">
+              <label for="email">Saisissez votre identifiant</label>
+                <input
+                  class="email"
+                  type="text"
+                  autocomplete="off"
+                  id="email"
+                  placeholder="Votre identifiant"
+                />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Composez votre mot de passe</label>
+                <input
+                  type="password"
+                  autocomplete="off"
+                  id="password"
+                  placeholder="Votre mot de passe"
+                  readonly
+                />
+            </div>
+        
+            <div id="keyboard">
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+              <div class="keyboard-button"><p> </p></div>
+            </div>
+
+            <div class="button">
+            <button id="submit-button" type="submit">Valider</button>
+            <button id="clear-button" type="button">Effacer</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="container-col2">
+            <a href="#"><img src="./assets/images/question-mark-svgrepo-com.svg" alt="logo d'un point d'interrogation"> Aide à la connexion</a>
+            <a href="#"><img src="./assets/images/arrow-from-shape-right-svgrepo-com.svg" alt="logo d'un carre avec une fleche qui sort">Identifiant / Mot de passe perdu</a>
+            <a href="#"><img src="./assets/images/lock-svgrepo-com.svg" alt="logo d'un cadenas">Sécurité Identifiant / Mot de passe</a>
+
+            <div class="important">
+                <p><span>Important</span> : votre vigilance est <br> primordiale pour assurer la sécurité de <br> votre compte.</p>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
